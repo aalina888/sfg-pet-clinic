@@ -2,10 +2,11 @@ package com.aalina.sfgpetclinic.services.map;
 
 import com.aalina.sfgpetclinic.model.Vet;
 import com.aalina.sfgpetclinic.services.CrudService;
+import com.aalina.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
