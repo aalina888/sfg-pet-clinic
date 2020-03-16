@@ -1,13 +1,13 @@
 package com.aalina.sfgpetclinic.services.map;
 
 import com.aalina.sfgpetclinic.model.Specialty;
-import com.aalina.sfgpetclinic.services.SpecialtiesService;
+import com.aalina.sfgpetclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialtyServiceMap extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+public class SpecialtyServiceMap extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public Set<Specialty> findAll() {
         return super.findAll();
